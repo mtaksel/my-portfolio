@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA Tester Portfolyosu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Hakkımda</a></li>
+                <li><a href="#skills">Beceriler</a></li>
+                <li><a href="#projects">Projeler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container split-layout">
+                <div class="left-content">
+                    <h2>About Me</h2>
+                    <p class="intro">I'm a former professional esports player turned QA Tester with a deep-seated passion for playing and testing video games. With 5+ years of competitive gaming experience and 2 years in software testing, I bring a unique blend of skills to ensure top-notch quality in gaming applications.</p>
+                    <div class="about-details">
+                        <div class="about-item">
+                            <i class="fas fa-search"></i>
+                            <h3>Keen Eye for Detail</h3>
+                            <p>I bring a unique perspective to software testing with my strategic mindset, honed through years of competitive gaming.</p>
+                        </div>
+                        <div class="about-item">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Gaming Background</h3>
+                            <p>My esports experience enhances my understanding of user experience in gaming applications, allowing me to identify critical issues quickly.</p>
+                        </div>
+                    </div>
+                    <div class="additional-info">
+                        <h3>Professional Journey</h3>
+                        <p>After retiring from Professional Esports and Content Creating, I channeled my passion for gaming into a career in QA testing. I've since worked on various projects, from mobile games to large-scale MMORPGs, ensuring seamless user experiences and bug-free releases.</p>
+                        <h3>Education</h3>
+                        <p>Currently studying Public Relations and Advertising at Anadolu University, with a focus on software development and testing methodologies.</p>
+                    </div>
+                    <div class="download-buttons">
+                        <a href="files/Mehmet-Turgut-Aksel-CV.pdf" download class="btn"><i class="fas fa-download"></i> Download CV</a>
+                        <a href="files/Mehmet-Turgut-Aksel-Cover-Letter.pdf" download class="btn"><i class="fas fa-file-alt"></i> Download Cover Letter</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <img src="images/cv.jpg" alt="Profile Photo" class="profile-img">
+                    <h1>Mehmet Turgut Aksel</h1>
+                    <h2 class="typewriter">Junior QA Tester</h2>
+                    <p class="motto">"Finding bugs is my superpower"</p>
+                    <div class="quick-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Bugs Found</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Projects Tested</span>
+                        </div>
+                    </div>
+                    <div class="languages">
+                        <span class="language-item">English (Fluent)</span>
+                        <span class="language-item">Turkish (Native)</span>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mehmeturgutaksel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mtaksel" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/mtaksel/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Key Skills & Interests</h2>
+                <div class="skills-interests-container">
+                    <div class="skills-section">
+                        <h3>Key Skills</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-check-circle"></i> Automated Testing</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Testing</li>
+                            <li><i class="fas fa-check-circle"></i> API Testing</li>
+                            <li><i class="fas fa-check-circle"></i> Test Case Design</li>
+                            <li><i class="fas fa-check-circle"></i> Bug Tracking</li>
+                            <li><i class="fas fa-check-circle"></i> Agile Methodologies</li>
+                        </ul>
+                    </div>
+                    <div class="interests-section">
+                        <h3>Interests</h3>
+                        <ul class="interests-list">
+                            <li><i class="fas fa-gamepad"></i> Competitive Gaming</li>
+                            <li><i class="fas fa-puzzle-piece"></i> Problem Solving</li>
+                            <li><i class="fas fa-guitar"></i> Playing Guitar</li>
+                            <li><i class="fas fa-utensils"></i> Cooking</li>
+                            <li><i class="fas fa-chess"></i> Strategy Games</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="spotify-profile">
+                    <h4>My Music Taste</h4>
+                    <div align="center">
+                        <a href="https://open.spotify.com/user/corpsebringer">
+                            <img src="https://spotify-recently-played-readme.vercel.app/api?user=corpsebringer&count=5" alt="Spotify recently played"  />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projeler</h2>
+                <div id="project-list" class="project-grid"></div>
+                <p class="more-projects">
+                <i>For more projects, check my <a href="https://github.com/mtaksel" target="_blank">GitHub</i></a>.
+                </p>
+            </div>
+        </section>
+
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mehmet Turgut Aksel. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <svg style="display: none;">
+      <symbol id="api-icon" viewBox="0 0 24 24">
+        <path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm1 1h4v4H7V7zm0 6h4v4H7v-4zm6-6h4v4h-4V7zm0 6h4v4h-4v-4z"/>
+      </symbol>
+    </svg>
+</body>
+</html>
