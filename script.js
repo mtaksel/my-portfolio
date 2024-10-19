@@ -3,22 +3,22 @@ const projects = [
     { 
         name: "Defect Tracker Portfolio", 
         description: "A comprehensive bug tracking portfolio showcasing defects identified across various applications.",
-        image: "images/defect-logos.png"
+        image: "assets/images/defect-logos.png"
     },
     { 
         name: "Robot Framework Web Automation", 
         description: "Developed test automation for amazon.com.tr using Robot Framework.",
-        image: "images/robot-framework.png"
+        image: "assets/images/robot-framework.png"
     },
     { 
         name: "API Testing Project", 
         description: "Created test scenarios for RESTful APIs using Postman",
-        image: "images/postman.png"
+        image: "assets/images/postman.png"
     },
     { 
         name: "Test Automation Bootcamp Pair 3 Final Project", 
         description: "An end-to-end test automation project for a web application, demonstrating skills and frameworks learned during the bootcamp.",
-        image: "images/istanbul-kodluyor.png"
+        image: "assets/images/istanbul-kodluyor.png"
     }
 ];
 
