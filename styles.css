@@ -36,7 +36,7 @@ button { cursor: pointer; }
 .nav-links a { min-height: 44px; display: flex; align-items: center; font-size: 12px; color: var(--muted); }
 .nav-links a:hover, .nav-links a[aria-current="location"] { color: var(--accent); }
 .dashboard { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; align-items: stretch; padding-top: 22px; }
-.panel { display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 19px 17px; min-width: 0; }
+.panel { display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 19px 17px; min-width: 0; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .panel-label { color: var(--muted); font-size: 10px; letter-spacing: .04em; }
 .panel-heading, .certificates-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 16px; }
 h2 { font-size: 19px; line-height: 1.2; letter-spacing: -.025em; }
@@ -93,7 +93,6 @@ details[open] summary > span { transform: rotate(45deg); }
 .certificate h3 { font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }
 .certificate p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 8px; margin-top: 4px; font-size: 10px; color: var(--muted); }
 .certificate p > span { white-space: nowrap; }
-.more-certificates summary { border-top: 0; }
 .certificates-source { display: inline-flex; align-items: center; min-height: 36px; padding-top: 10px; margin-top: auto; font-size: 10px; }
 .project-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
 .project-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
@@ -174,3 +173,6 @@ details[open] summary > span { transform: rotate(45deg); }
     .panel-heading > .panel-label { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Hide scrollbar from page level but keep functionality */
+html { scrollbar-width: none; -ms-overflow-style: none; }
