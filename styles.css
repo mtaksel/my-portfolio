@@ -75,7 +75,8 @@ h1 { max-width: 235px; margin-inline: auto; font-size: 24px; line-height: 1.18; 
 .interests-list { display: flex; flex-wrap: wrap; gap: 6px 12px; color: var(--muted); font-size: 11px; }
 .interests-list li { display: flex; align-items: center; gap: 7px; }
 .interests-list li::before { content: ""; height: 3px; width: 3px; border-radius: 50%; background: var(--accent); }
-.additional-info { margin-top: auto; padding-top: 18px; }
+.additional-info { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border); }
+.journey-title { font-size: 14px; margin-bottom: 8px; color: var(--text); }
 summary { min-height: 42px; padding-block: 9px; display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid var(--border); font-size: 11px; cursor: pointer; list-style: none; }
 summary::-webkit-details-marker { display: none; }
 summary > span { color: var(--accent); font-size: 18px; font-weight: 400; }
@@ -94,9 +95,9 @@ details[open] summary > span { transform: rotate(45deg); }
 .certificate p > span { white-space: nowrap; }
 .more-certificates summary { border-top: 0; }
 .certificates-source { display: inline-flex; align-items: center; min-height: 36px; padding-top: 10px; margin-top: auto; font-size: 10px; }
-.project-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-.project-card { display: grid; grid-template-columns: 76px minmax(0, 1fr); align-items: stretch; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-.project-image { width: 76px; height: 100%; min-height: 108px; max-height: 180px; object-fit: contain; background: #fff; padding: 6px; }
+.project-grid { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.project-card { display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.project-image { width: 100%; height: 78px; object-fit: contain; background: #fff; padding: 6px; }
 .project-info { padding: 12px 11px; }
 .project-info h3 { font-size: 12px; line-height: 1.4; color: var(--accent); }
 .project-info h3 a { display: inline-block; }
@@ -161,8 +162,7 @@ details[open] summary > span { transform: rotate(45deg); }
     .additional-info { margin-top: 18px; padding-top: 0; }
     .certificate h3 { font-size: 12px; }
     .certificate p { font-size: 11px; }
-    .project-card { grid-template-columns: 80px minmax(0, 1fr); }
-    .project-image { width: 80px; min-height: 110px; }
+    .project-image { height: 65px; }
     .project-info { padding: 12px; }
     .project-info h3 { font-size: 13px; }
     .project-info p { font-size: 12px; }
@@ -172,7 +172,5 @@ details[open] summary > span { transform: rotate(45deg); }
 @media (max-width: 359px) {
     .about-details { grid-template-columns: 1fr; }
     .panel-heading > .panel-label { display: none; }
-    .project-card { grid-template-columns: 64px minmax(0, 1fr); }
-    .project-image { width: 64px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
