@@ -17,6 +17,7 @@
             <div class="nav-links">
                 <a href="#home">About Me</a>
                 <a href="#skills">Skills & Interests</a>
+                <a href="#education">Education</a>
                 <a href="#projects">Projects</a>
             </div>
         </nav>
@@ -27,7 +28,7 @@
                 <span class="panel-label">Profile</span>
                 <img src="assets/images/cv.jpg" alt="Profile photo of Mehmet Turgut Aksel" class="profile-img" width="1368" height="1824" fetchpriority="high">
                 <h1 id="profile-title">Mehmet Turgut Aksel</h1>
-                <p class="role">Junior QA Tester</p>
+                <p class="role">Software QA Tester</p>
                 <p class="motto">“Finding bugs is my superpower”</p>
                 <div class="quick-stats">
                     <div><span class="stat-number">500+</span><span class="stat-label">Bugs Found</span></div>
@@ -35,14 +36,14 @@
                 </div>
                 <div class="languages"><span>English (Fluent)</span><span>Turkish (Native)</span></div>
                 <div class="download-buttons">
-                    <a href="assets/files/Mehmet-Turgut-Aksel-CV.pdf" download class="btn">Download CV <span aria-hidden="true">↓</span></a>
-                    <a href="assets/files/Mehmet-Turgut-Aksel-Cover-Letter.pdf" download class="btn btn-secondary">Cover Letter <span aria-hidden="true">↓</span></a>
+                    <button type="button" data-document="cv" class="btn" aria-haspopup="dialog">Download CV <span aria-hidden="true">↓</span></button>
+                    <button type="button" data-document="cover-letter" class="btn btn-secondary" aria-haspopup="dialog">Cover Letter <span aria-hidden="true">↓</span></button>
                 </div>
+                <p class="download-hint">Password-protected PDFs</p>
+                <noscript><p class="download-hint">Enable JavaScript to unlock documents.</p></noscript>
                 <div id="contact" class="social-links" aria-label="Social and contact links">
                     <a href="https://www.linkedin.com/in/mehmeturgutaksel/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-                    <a href="https://github.com/mtaksel" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-                    <a href="https://www.instagram.com/mtaksel/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-                </div>
+                    <a href="https://github.com/mtaksel" target="_blank" rel="noopener noreferrer">GitHub ↗</a>                </div>
                 <a class="email-link" href="mailto:mehmeturgutaksel@gmail.com">mehmeturgutaksel@gmail.com</a>
             </section>
 
@@ -69,16 +70,41 @@
                     </div>
                 </div>
                 <details class="additional-info">
-                    <summary>Professional Journey & Education <span aria-hidden="true">+</span></summary>
+                    <summary>Professional Journey <span aria-hidden="true">+</span></summary>
                     <div class="details-content">
-                        <h3>Professional Journey</h3>
                         <p>After retiring from professional esports and content creation, I channeled my passion for gaming into QA testing. My work spans projects from mobile games to large-scale MMORPGs, with a focus on user experience and clear defect documentation.</p>
-                        <h3>Education</h3>
-                        <p>My education includes Public Relations and Advertising at Anadolu University, alongside training in software testing and automation.</p>
-                        <p><strong>Software Testing & Quality Assurance</strong><br>İstanbul Kodluyor, Enocta, Republic of Türkiye Ministry of Industry and Technology, and Bridges Outcomes Partnerships · February–June 2024.</p>
-                        <p><strong>Java Test Automation</strong><br>JCI Istanbul, Software Industrialists Association & Virgosol · May–August 2024.</p>
+                        <p>Additional training: Java Test Automation, JCI Istanbul / YASAD / Virgosol, May–August 2024. Software Testing & Quality Assurance, İstanbul Kodluyor / Enocta / Republic of Türkiye Ministry of Industry and Technology / Bridges Outcomes Partnerships, February–June 2024.</p>
                     </div>
                 </details>
+            </section>
+
+
+            <section id="education" class="panel education-panel" aria-labelledby="education-title">
+                <div class="panel-heading"><h2 id="education-title">Education</h2><span class="panel-label">Learning</span></div>
+                <div class="education-list">
+                    <div><h3>Anadolu University</h3><p>Public Relations & Advertising</p></div>
+                    <div><h3>İstanbul Bilgi Üniversitesi</h3><p>2015–2017</p></div>
+                    <div><h3>Software Testing & QA</h3><p>İstanbul Kodluyor / Enocta · 2024</p></div>
+                </div>
+                <div class="certificates-heading"><h2>Certifications</h2><span class="panel-label">10 credentials</span></div>
+                <ul class="certificate-list">
+                        <li class="certificate"><h3>Test Otomasyonu</h3><p>VIRGOSOL<span>Aug 2024</span></p></li>
+                        <li class="certificate"><h3>McKinsey Forward Program</h3><p>McKinsey & Company<span>Jul 2024</span></p></li>
+                        <li class="certificate"><h3>Dijital Liderlik Eğitimi</h3><p>Galatasaray Üniversitesi<span>May 2024</span></p></li>
+                        <li class="certificate"><h3>Yazılım Kalite ve Test Uzmanlığı</h3><p>Tobeto<span>May 2024</span></p></li>
+                        <li class="certificate"><h3>Python Essentials 1</h3><p>Cisco<span>Apr 2024</span></p></li>
+                </ul>
+                <details class="more-certificates">
+                    <summary>5 more certifications <span aria-hidden="true">+</span></summary>
+                    <ul class="certificate-list">
+                        <li class="certificate"><h3>SQL İLE VERİTABANI SORGULAMA 101</h3><p>Turkcell Geleceği Yazanlar<span>Apr 2024</span></p></li>
+                        <li class="certificate"><h3>Test Otomasyon Patikası</h3><p>Patika.dev<span>Apr 2024</span></p></li>
+                        <li class="certificate"><h3>Yazılım Testine Giriş</h3><p>BTK Akademi<span>Feb 2024</span></p></li>
+                        <li class="certificate"><h3>Tech Istanbul & Kodluyoruz Yazılıma Başlangıç Programı #2</h3><p>Kodluyoruz<span>Dec 2023</span></p></li>
+                        <li class="certificate"><h3>Responsive Web Design</h3><p>freeCodeCamp<span>Aug 2023</span></p></li>
+                    </ul>
+                </details>
+                <a class="certificates-source" href="https://www.linkedin.com/in/mehmeturgutaksel/details/certifications/" target="_blank" rel="noopener noreferrer">View credentials on LinkedIn ↗</a>
             </section>
 
             <section id="projects" class="panel projects-panel" aria-labelledby="projects-title">
@@ -117,6 +143,18 @@
             </section>
         </div>
     </main>
+
+    <dialog id="download-dialog" class="download-dialog" aria-labelledby="download-title" aria-describedby="download-description">
+        <form id="download-form">
+            <div class="dialog-heading"><h2 id="download-title">Protected document</h2><button type="button" class="dialog-close" id="download-cancel" aria-label="Close download dialog">×</button></div>
+            <p id="download-description">Enter the document password to unlock and download this PDF.</p>
+            <label for="document-password">Password</label>
+            <input id="document-password" type="password" autocomplete="off" required autofocus>
+            <p id="download-status" class="download-status" role="status" aria-live="polite"></p>
+            <button type="submit" id="download-submit" class="btn">Unlock & download <span aria-hidden="true">↓</span></button>
+        </form>
+    </dialog>
+
     <footer class="container footer">
         <p>© <span id="year">2026</span> Mehmet Turgut Aksel</p>
         <p>Manual testing · Automation · Game QA</p>
