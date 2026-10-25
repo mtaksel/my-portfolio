@@ -89,6 +89,10 @@ details[open] summary > span { transform: rotate(45deg); }
 .education-list p { color: var(--muted); font-size: 11px; margin-top: 3px; }
 .certificates-heading { margin-top: 22px; margin-bottom: 7px; padding-top: 17px; border-top: 1px solid var(--border); }
 .certificates-heading h2 { font-size: 17px; }
+
+.certificates-wrapper { max-height: calc(100vh - 350px); overflow-y: auto; scrollbar-width: none; }
+.certificates-wrapper::-webkit-scrollbar { display: none; }
+.certificates-list { max-height: 380px; padding-bottom: 16px; margin-top: 8px; }
 .certificate { padding-block: 10px; border-bottom: 1px solid var(--border); }
 .certificate h3 { font-size: 11px; line-height: 1.45; overflow-wrap: anywhere; }
 .certificate p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 8px; margin-top: 4px; font-size: 10px; color: var(--muted); }
@@ -173,6 +177,3 @@ details[open] summary > span { transform: rotate(45deg); }
     .panel-heading > .panel-label { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-
-/* Hide scrollbar from page level but keep functionality */
-html { scrollbar-width: none; -ms-overflow-style: none; }
