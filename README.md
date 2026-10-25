@@ -1,45 +1,40 @@
-# Mehmet Turgut Aksel - Portfolio
+# Mehmet Turgut Aksel — Portfolio
 
-Hello! I am Mehmet Turgut Aksel, working as a QA Tester. This portfolio showcases my professional information, education, interests, projects, and contact details.
+A minimal, dark portfolio for manual testing, test automation, API testing, and game QA.
 
-## Table of Contents
-- [About Me](#about-me)
-- [Education](#education)
-- [Interests](#interests)
-- [Projects](#projects)
-- [Contact](#contact)
-- [Cover Letter and CV](#cover-letter-and-cv)
+## Preview locally
 
-## About Me
-I work as a QA Tester to enhance software quality. I have experience in test automation, manual testing, bug reporting, and continuous integration.
+No dependencies or build step are required. Open `index.html`, or serve the repository:
 
-## Education
+```sh
+python -m http.server 4173
+```
 
-- **Software Testing and Quality Assurance Specialist** Republic Of Türkiye Ministry of Industry and Technology, Enocta, Istanbul Kodluyor, Bridges Outcomes Partnerships. 
-  - February 2024 - June 2024
-- **Java Test Automation** - JCI Istanbul, Software Industrialists Association, Virgosol Information and Software Solutions Inc.
-  - May 2024 - August 2024
+Visit http://localhost:4173.
 
-## Interests
-- Software Testing
-- Game Testing and Bug Reporting
-- Web Development and Design
-- User Experience (UX)
+## Page structure
 
-## Projects
-- **Hepsiburada Web Automation**: An automation project using Selenium and Python.
-- **Katalon Web Automation**: Test automation for the Swag Labs website.
-- **Postman API Project**: API testing conducted on the reqres.in website.
-- and more..
+- Introduction, portrait, and CV download
+- Testing focus
+- Four projects with GitHub links and original project images
+- Background, with expandable education, interests, and music
+- Email, LinkedIn, and GitHub contact links
 
-## Contact
-- **Email**: [mehmeturgutaksel@gmail.com](mailto:mehmeturgutaksel@gmail.com)
-- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/mehmeturgutaksel/)
-- **GitHub**: [My GitHub Profile](https://github.com/mtaksel)
+All main content and navigation work without JavaScript. The small script updates the copyright year and highlights the current section. The layout supports mobile screens, visible keyboard focus, and reduced-motion preferences.
 
-## Cover Letter and CV
-You can download my [cover letter](files/Mehmet-Turgut-Aksel-Cover-Letter.pdf) and [CV](/files/Mehmet-Turgut-Aksel-CV.pdf) from this portfolio.
+## Files
 
----
+- `index.html`: content and semantic page structure
+- `styles.css`: responsive dark theme
+- `script.js`: progressive enhancements
+- `assets/images/`: original portrait and project images
+- [CV](./assets/files/Mehmet-Turgut-Aksel-CV.pdf)
+- [Cover letter](./assets/files/Mehmet-Turgut-Aksel-Cover-Letter.pdf)
 
-Thank you! If you have any questions regarding my portfolio, feel free to reach out to me.
+The optional Spotify image is provided by an external service; the Spotify profile link remains available if it cannot load.
+
+## Deployment
+
+The site uses relative asset paths and can be served directly by GitHub Pages at `/my-portfolio/`. Publish the repository's root directory; no package installation is needed.
+
+[GitHub](https://github.com/mtaksel) · [LinkedIn](https://www.linkedin.com/in/mehmeturgutaksel/)
