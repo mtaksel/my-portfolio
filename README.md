@@ -1,40 +1,27 @@
-# Mehmet Turgut Aksel — Portfolio
+# Mehmet Turgut Aksel — QA Portfolio
 
-A minimal, dark portfolio for manual testing, test automation, API testing, and game QA.
+A compact, dark version of the original portfolio.
 
-## Preview locally
+## Layout
 
-No dependencies or build step are required. Open `index.html`, or serve the repository:
+Desktop uses three panels: profile and downloads, About Me with Skills & Interests, and the original four project cards. The project titles, descriptions, and images are retained, with scaled image areas. Education and professional journey remain available in an expandable section. My Music Taste has been removed.
+
+On tablets the project panel moves below the other two panels. On mobile the panels stack naturally; no fixed viewport height or internal scrolling hides content.
+
+## Local preview
+
+Open `index.html`, or run:
 
 ```sh
 python -m http.server 4173
 ```
 
-Visit http://localhost:4173.
+Then visit http://localhost:4173. No dependencies or build step are required.
 
-## Page structure
+## Assets
 
-- Introduction, portrait, and CV download
-- Testing focus
-- Four projects with GitHub links and original project images
-- Background, with expandable education, interests, and music
-- Email, LinkedIn, and GitHub contact links
-
-All main content and navigation work without JavaScript. The small script updates the copyright year and highlights the current section. The layout supports mobile screens, visible keyboard focus, and reduced-motion preferences.
-
-## Files
-
-- `index.html`: content and semantic page structure
-- `styles.css`: responsive dark theme
-- `script.js`: progressive enhancements
-- `assets/images/`: original portrait and project images
 - [CV](./assets/files/Mehmet-Turgut-Aksel-CV.pdf)
 - [Cover letter](./assets/files/Mehmet-Turgut-Aksel-Cover-Letter.pdf)
+- Original portrait and all four project images are preserved in `assets/images/`.
 
-The optional Spotify image is provided by an external service; the Spotify profile link remains available if it cannot load.
-
-## Deployment
-
-The site uses relative asset paths and can be served directly by GitHub Pages at `/my-portfolio/`. Publish the repository's root directory; no package installation is needed.
-
-[GitHub](https://github.com/mtaksel) · [LinkedIn](https://www.linkedin.com/in/mehmeturgutaksel/)
+The page and project links work without JavaScript. The small script updates the year and navigation state. Asset paths support GitHub Pages under `/my-portfolio/`.
